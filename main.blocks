@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="]s+=Ljf=)70o$fDtYS2t">4digit</variable><variable id="34pe8o(8t9GF[PH)ZX1}">élément</variable></variables><block type="pxt-on-start" id="v5Mq9vp[hI6Q%zJfpq|!" x="0" y="0"><statement name="HANDLER"><block type="basic_show_icon" id="hIZw#nrel{#I)R-Z^lV}"><field name="i">IconNames.Yes</field><next><block type="variables_set" id="JDLqY?kei8b]0!@EqamT"><field name="VAR" id="]s+=Ljf=)70o$fDtYS2t">4digit</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="grove_tm1637_create" id="@Ka|b$w`!#vhvJ4q{:ZF"><field name="clkPin">DigitalPin.P1</field><field name="dataPin">DigitalPin.P15</field></block></value></block></next></block></statement></block><block type="device_forever" id="7iJbWq,-5#)0_TRaMM,4" x="5" y="222"><statement name="HANDLER"><block type="grove_tm1637_display_number" id="-+g]CFfAJhw:oFq@Qtti"><value name="4Digit"><block type="variables_get" id="TjoU#cGB/n?-|Av}SBp:"><field name="VAR" id="]s+=Ljf=)70o$fDtYS2t">4digit</field></block></value><value name="dispData"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="W1wk(Kh6(LxlR!Od.qQ."><field name="name">AnalogPin.P0</field></block></value><next><block type="controls_if" id="[Hv-PPM;2f/T),bZH]%m"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="GALayo(?aRQt7Gir-u03"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="@3/mSln^^?PGC?Q79|nr"><field name="name">AnalogPin.P0</field></block></value><value name="B"><shadow type="math_number" id="dC:Cd-z$QPfsvHM|?G9S"><field name="NUM">1000</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="e)}awPLIL0iE@o~p4ekY"><field name="LEDS">`
+        # # # . . 
+        # # # . . 
+        # # # # # 
+        . . # # # 
+        . . # # #
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id="EMNdCZpEU^LXQnFe-d^p"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="dbn}6(il~u0LeF~|*nlT"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="[~C5p9MYII:VMBqIaxuP"><field name="name">AnalogPin.P0</field></block></value><value name="B"><shadow type="math_number" id="-1{gm[hIy:3XtEmmcqGB"><field name="NUM">700</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="D9](ee6(1Z#cj6N($s(H"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id="Ces*WC(##uB=D(28G(FC"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="W2Vqt|~s-bJVzHCk[hr*"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="*BVQ*1L3J]4;w*9y@c}Y"><field name="name">AnalogPin.P0</field></block></value><value name="B"><shadow type="math_number" id="_2+t]H|L[n/{v.m8l!4;"><field name="NUM">300</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="J~nnuHtk|5}5zr{NE^Jy"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id=".L*f}~G,G89o-(^?3m7?"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></statement></block></statement></block></statement></block></next></block></statement></block></xml>
